@@ -1,0 +1,21 @@
+{
+  "name": "file-uploader-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "asap": "^2.0.6",
+    "dezalgo": "^1.0.3",
+    "formidable": "^2.0.1",
+    "hexoid": "^1.0.0",
+    "once": "^1.4.0",
+    "qs": "^6.9.3",
+    "wrappy": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
