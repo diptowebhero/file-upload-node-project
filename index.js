@@ -23,6 +23,7 @@ const server = http.createServer((req, res) => {
   } else if (url === "/process" && method === "post") {
     const form = new formidable.IncomingForm();
     form.parse(req, (err, fields, files) => {
+      const data = JSON.stringify(fields);
       if (err) {
         console.log(err.message);
       } else {
@@ -36,7 +37,7 @@ const server = http.createServer((req, res) => {
         });
         fs.writeFile(
           `./usersData/${fields.email}/${fields.fname}.json`,
-          JSON.stringify(fields),
+          data,
           (err) => {
             if (err) {
               console.log(err.message);
